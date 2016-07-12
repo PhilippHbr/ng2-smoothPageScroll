@@ -1,0 +1,15 @@
+<h1>Menu</h1>
+<ul>
+  <li *ngFor="let item of menuItems">
+    <span>{{item.id}}</span> {{item.menuName}}
+  </li>
+</ul>
+
+
+<h2>Content</h2>
+<ul>
+    <li *ngFor="let item of menuItems">
+        <h3>{{item.menuName}}</h3>
+        <p *ngFor="let score of item.inhalt">{{score}}</p><br />
+  </li>
+</ul>
